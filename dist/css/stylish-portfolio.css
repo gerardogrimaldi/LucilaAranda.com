@@ -40,40 +40,44 @@ a {
 }
 
 .text-contact-header-left {
-    top: -182%;
+    top: 1%;
     left: 5%;
     position: absolute;
+    z-index: 3;
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 24px;
+    display: inline;
 }
 
 .text-contact-header-right {
-    top: -182%;
+    top: 1%;
     right: 5%;
     position: absolute;
-}
-
-.text-contact-header-left i {
+    z-index: 3;
+    color: #fff;
+    font-family: Helvetica;
     font-size: 24px;
     display: inline;
 }
 
 .text-contact-header-left i {
-    font-size: 24px;
+    display: inline;
+}
+
+.text-contact-header-left i {
     display: inline;
 }
 .text-contact-header-left p {
-    font-family: Helvetica;
-    font-size: 24px;
     display: inline;
 }
 
 .text-contact-header-right p {
-    font-family: Helvetica;
-    font-size: 24px;
     display: inline;
 }
 
-
 .text-vertical-center h1 {
+    text-shadow:2px 4px 3px rgba(0,0,0,0.3);
     font-size: 4.5em;
     font-weight: 700;
     margin: 0;
@@ -87,6 +91,10 @@ a {
     width: 100%;
     text-align: center;
     color: #fff;
+}
+
+.video-container .title-container h1 {
+    font-size: 55px;
 }
 
 /* Custom Button Styles */
@@ -263,7 +271,7 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background: url(../img/bg_contact.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -300,6 +308,14 @@ hr.small {
     margin: 10px;
 }
 
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form textarea {
+    min-height: 130px;
+}
 
 /* Map */
 
