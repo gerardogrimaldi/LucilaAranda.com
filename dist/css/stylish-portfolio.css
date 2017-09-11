@@ -21,11 +21,16 @@ body {
 }
 
 .bg-primary {
-    background-color: #fdd835 !important;
+    background-color: #fdd800 !important;
 }
 
 .text-primary {
-    color: #fdd835 !important;
+    color: #fdd800 !important;
+}
+
+a {
+    color: #FDD800;
+    font-weight: 900;
 }
 
 .text-vertical-center {
