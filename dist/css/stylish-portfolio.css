@@ -19,6 +19,7 @@ body {
     letter-spacing: .1px;
     text-rendering: optimizeLegibility;
 }
+
 .bg-primary {
     background-color: #fdd835 !important;
 }
@@ -34,13 +35,13 @@ body {
 }
 
 .text-contact-header-left {
-    top: -180%;
+    top: -182%;
     left: 5%;
     position: absolute;
 }
 
 .text-contact-header-right {
-    top: -180%;
+    top: -182%;
     right: 5%;
     position: absolute;
 }
