@@ -78,8 +78,8 @@ a {
 }
 
 
-@media screen and (max-width: 400px) {
-    #email {
+@media screen and (max-width: 730px) {
+    .text-contact-header-right {
         top: 8%;
         left: 5%;
     }
