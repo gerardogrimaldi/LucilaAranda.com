@@ -260,17 +260,24 @@
       <div class="container text-center">
         <h3>Llen&aacute; este formulario para contactarte a la brevedad: </h3>
 
-        <form class="form-group form" method="POST" action="http://formspree.io/liclucilaaranda@gmail.com">
-          <input type="name" class="form-control" name="name" placeholder="Nombre">
+        <form id="contactform" class="form-group form" method="POST">
+          <input type="text" class="form-control" name="name" placeholder="Nombre">
           </br>
           <input type="email" class="form-control" name="_replyto" placeholder="Email de contacto">
           </br>
+          <input type="hidden" class="form-control" name="_subject" value="Contacto LucilaAranda.com" />
+          </br>
           <textarea name="message" class="form-control" placeholder="Consulta"></textarea>
           </br>
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_next" value="//lucilaaranda.com/" />
           <a href="#" class="btn btn-lg btn-light">Limpiar</a>
-          <button class="btn btn-lg btn-dark">Enviar</button>
+          <input type="submit" class="btn btn-lg btn-dark" value="Enviar"/>
         </form>
-
+        <script>
+          var contactform =  document.getElementById('contactform');
+          contactform.setAttribute('action', '//formspree.io/' + 'liclucilaaranda' + '@' + 'gmail' + '.' + 'com');
+        </script>
       </div>
     </aside>
 
