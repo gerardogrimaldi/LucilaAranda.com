@@ -7,6 +7,7 @@ $( document ).ready(function() {
   initBannerVideoSize('.video-container video');
 
   $(window).on('resize', function() {
+    debugger;
     scaleVideoContainer();
     scaleBannerVideoSize('.video-container .poster img');
     scaleBannerVideoSize('.video-container .filter');
@@ -16,10 +17,13 @@ $( document ).ready(function() {
 });
 
 function scaleVideoContainer() {
-  var height = $(window).height() + 5;
-  var unitHeight = parseInt(height) + 'px';
-  $('.homepage-hero-module').css('height', unitHeight);
-
+  if (detectmob()) {
+    $('.homepage-hero-module').css('height', 497 + 'px');
+  } else {
+    var width = $(window).width(),
+      unitHeight = parseInt(width * 56.25 /100) + 'px';
+    $('.homepage-hero-module').css('height', unitHeight);
+  }
 }
 
 function initBannerVideoSize(element){
@@ -31,6 +35,14 @@ function initBannerVideoSize(element){
 
   scaleBannerVideoSize(element);
 
+}
+
+function detectmob() {
+  if(window.innerWidth <= 800 && window.innerHeight <= 1000) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function scaleBannerVideoSize(element){

@@ -74,17 +74,15 @@ a {
 }
 
 .text-contact-header-right p {
-    display: inline;
+  display: inline;
 }
-
 
 @media screen and (max-width: 730px) {
-    .text-contact-header-right {
-        top: 8%;
-        left: 5%;
-    }
+  .text-contact-header-right {
+    top: 15%;
+    left: 5%;
+  }
 }
-
 
 .text-vertical-center h1 {
     text-shadow: 0 1px 0 #ccc,
