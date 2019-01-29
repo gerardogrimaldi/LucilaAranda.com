@@ -7,7 +7,6 @@ $( document ).ready(function() {
   initBannerVideoSize('.video-container video');
 
   $(window).on('resize', function() {
-    debugger;
     scaleVideoContainer();
     scaleBannerVideoSize('.video-container .poster img');
     scaleBannerVideoSize('.video-container .filter');

@@ -23,6 +23,10 @@ body {
 .bg-primary {
     background-color: #fdd800 !important;
 }
+.bg-secondary {
+  background-color: #b5b3af !important;
+}
+
 
 .text-primary {
     color: #fdd800 !important;
