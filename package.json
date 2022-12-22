@@ -11,5 +11,8 @@
   "dependencies": {
     "express": "^4.18.1",
     "startbootstrap-stylish-portfolio": "^6.0.5"
+  },
+  "devDependencies": {
+    "@static/charge": "^1.7.0"
   }
 }
