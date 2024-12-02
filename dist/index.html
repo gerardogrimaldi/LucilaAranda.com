@@ -75,13 +75,31 @@
         }
 
         .hero-section {
-            background: linear-gradient(rgba(155, 123, 183, 0.7), rgba(155, 123, 183, 0.7)), url('img/hero-bg.jpg');
+            background: linear-gradient(rgba(155, 123, 183, 0.7), rgba(155, 123, 183, 0.7)), url('img/lavenders-1280.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh;
             display: flex;
             align-items: center;
             color: white;
+            position: relative;
+        }
+
+        /* Add a subtle texture overlay */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(155, 123, 183, 0.3), rgba(232, 214, 232, 0.3));
+            pointer-events: none;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 1;
         }
 
         .card {
@@ -157,7 +175,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8" data-aos="fade-up">
-                    <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeIn">Encuentra tu camino hacia el bienestar emocional</h1>
+                    <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeIn">¿Buscas un espacio de contención y reflexión? Ofrezco atención
+                      psicológica con orientación psicoanalítica, adaptada a tus necesidades
+                      individuales.</h1>
                     <p class="lead mb-4">Psicóloga especializada en terapia individual y grupal</p>
                     <a href="#contacto" class="btn btn-primary btn-lg">Agenda tu consulta</a>
                 </div>
@@ -176,41 +196,32 @@
                     <h2 class="mb-4">Sobre Mí</h2>
                     <p class="lead mb-4">Con más de 12 años de experiencia, me dedico a ayudar a las personas a encontrar su mejor versión.</p>
                     <p class="mb-4">Mi enfoque terapéutico se basa en la empatía, el respeto y la comprensión de las necesidades únicas de cada persona.</p>
+                    <p class="mb-4">Brindo un espacio seguro y confidencial para trabajar tus emociones, afrontar desafíos, y encontrar herramientas para una vida plena y auténtica.</p>
                     <ul class="list-unstyled mb-4">
                         <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Licenciada en Psicología</li>
                         <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Especialista en VIH y ataques de pánico y ansiedad</li>
                         <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Orientación psicoanalítica</li>
                         <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Formación continua</li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Approach Section -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center" data-aos="fade-up">
-                    <h2 class="mb-4">Mi Enfoque</h2>
-                    <p class="lead mb-4">¿Buscas un espacio de contención y reflexión?</p>
-                    <p class="mb-4">Ofrezco atención psicológica con orientación psicoanalítica, adaptada a tus necesidades individuales.</p>
-                    <p class="mb-5">Especialista en temáticas relacionadas con el VIH, brindo un espacio seguro y confidencial para trabajar tus emociones, afrontar desafíos, y encontrar herramientas para una vida plena y auténtica.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center g-4">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="service-card text-center">
-                        <i class="fas fa-video fa-2x text-primary mb-3"></i>
-                        <h4 class="h5 mb-3">Modalidad</h4>
-                        <p>Sesiones presenciales y virtuales</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card text-center">
-                        <i class="fas fa-brain fa-2x text-primary mb-3"></i>
-                        <h4 class="h5 mb-3">Enfoque</h4>
-                        <p>Psicoanálisis y cuidado integral de la salud mental</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-video fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h5 class="mb-1">Modalidad</h5>
+                                    <p class="mb-0">Sesiones presenciales y virtuales</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-brain fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h5 class="mb-1">Enfoque</h5>
+                                    <p class="mb-0">Psicoanálisis y cuidado integral</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -218,11 +229,11 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="section-padding bg-light">
+    <section class="section-padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center" data-aos="fade-up">
-                    <h2 class="mb-4">Transformá tu vida</h2>
+                    <h2 class="mb-4">¿Buscas un espacio de contención y reflexión?</h2>
                     <p class="lead mb-4">Transformar tu vida comienza con un primer paso. Estoy aquí para acompañarte.</p>
                     <p class="mb-4">Cuidar tu salud mental es el mejor regalo que podés darte. ❤</p>
                     <div class="contact-buttons">
